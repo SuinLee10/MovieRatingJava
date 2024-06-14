@@ -202,6 +202,7 @@ public class MovieFrame extends JFrame {
         while (tableModel.getRowCount() > 0) {
             tableModel.removeRow(0);
         }
+
         for (Movie movie : movieList) {
             String starRate = "";
             if (movie.getRate().equals("Not Rated Yet") || movie.getRate() == null) {
@@ -297,7 +298,6 @@ public class MovieFrame extends JFrame {
                 try {
                     int rateInt = Integer.parseInt(rate.trim());
                     if (rateInt >= 1 && rateInt <= 5) {
-                        displayMessage("Rate is updated!");
                         break;
                     } else {
                         JOptionPane.showMessageDialog(this, "Rate has to be between 1 and 5", "Error", JOptionPane.ERROR_MESSAGE);
