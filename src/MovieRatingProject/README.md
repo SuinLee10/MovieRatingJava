@@ -1,7 +1,7 @@
 # **Project title**
 
 ## 1. Project members
-### - 채정원
+### - 22100522 채정원
 ### - 22100522 이수인
 ## 2. Project description
 We are going to make a movie rating system. 
@@ -15,6 +15,7 @@ After entering “find genre,” the system asks the user which genre he/she wan
 Lastly, by inputting “delete,” the system asks and finds the movie that the user wants to delete. The system then deletes it from the list and updates the file.
 
 ## 3. UML diagram of classes and interfaces
+
 
 ## 4. github link
 

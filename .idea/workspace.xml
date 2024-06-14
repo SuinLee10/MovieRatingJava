@@ -5,34 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7544e4bd-4a56-4f59-a16f-a70b03743d0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieRateJava.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/print.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sorting.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/CRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Documentary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Fantasy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Fiction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/History.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/MovieFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/NonFiction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Romance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/ScienceFiction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/iCRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserGuide.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/movie.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieRatingProject/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieRatingProject/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718274375462</updated>
-      <workItem from="1718274376726" duration="15700000" />
+      <workItem from="1718274376726" duration="19698000" />
     </task>
     <servers />
   </component>
