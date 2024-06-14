@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7544e4bd-4a56-4f59-a16f-a70b03743d0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/movie.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieRatingProject/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieRatingProject/CRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieRatingProject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieRatingProject/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieRatingProject/MovieFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieRatingProject/MovieFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MovieRatingProject/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieRatingProject/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieRatingProject/iCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieRatingProject/ICRUD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +45,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/leesu-in/Documents/JavaProgramming/finalproject/MovieRateJava",
@@ -66,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718274375462</updated>
-      <workItem from="1718274376726" duration="21237000" />
+      <workItem from="1718274376726" duration="23924000" />
     </task>
     <servers />
   </component>
@@ -80,6 +88,11 @@
           <url>file://$PROJECT_DIR$/src/MovieRatingProject/MovieFrame.java</url>
           <line>393</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MovieRatingProject/Main.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

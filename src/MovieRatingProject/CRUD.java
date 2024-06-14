@@ -3,7 +3,7 @@ package MovieRatingProject;
 import java.io.*;
 import java.util.*;
 
-public class CRUD implements iCRUD{
+public class CRUD implements ICRUD {
     private Map<String, Movie> list;
     public CRUD(){
         this.list = new HashMap<>();
@@ -159,7 +159,7 @@ public class CRUD implements iCRUD{
             System.out.println("Not Found");
         }
     }
-    public void delete(){
+    public void deleteMovie(){
         Scanner keyboard = new Scanner(System.in);
         String movieNameDelete, userConfirmation;
         System.out.print("Movie title for deleting: ");

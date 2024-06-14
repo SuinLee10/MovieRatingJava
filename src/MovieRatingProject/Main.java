@@ -41,7 +41,7 @@ public class Main {
 				manager.findGenre();
 			}
 			else if (input.equalsIgnoreCase("delete")) {
-				manager.delete();
+				manager.deleteMovie();
 			}
 			else if (input.equalsIgnoreCase("add")) {
 				manager.addMovie();

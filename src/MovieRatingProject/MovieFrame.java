@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.List;
 import java.util.Scanner;
 
-public class MovieFrame extends JFrame {
+public class MovieFrame extends JFrame implements ICRUD{
     private DefaultTableModel tableModel;
     private JTable table;
     private Map<String, Movie> list = new HashMap<>();
@@ -166,7 +166,7 @@ public class MovieFrame extends JFrame {
                     printMovie();
                     break;
                 case "rate":
-                    rateMovie();
+                    addRate();
                     break;
                 case "findgenre":
                     findGenre();
@@ -194,11 +194,11 @@ public class MovieFrame extends JFrame {
         JOptionPane.showMessageDialog(this, message);
     }
 
-    private void printMovie() {
+    public void printMovie() {
         updateTable(new ArrayList<>(list.values()));
     }
 
-    private void updateTable(List<Movie> movieList) {
+    public void updateTable(List<Movie> movieList) {
         while (tableModel.getRowCount() > 0) {
             tableModel.removeRow(0);
         }
@@ -217,7 +217,7 @@ public class MovieFrame extends JFrame {
         }
     }
 
-    private void rateMovie() {
+    public void addRate() {
         String movieName = JOptionPane.showInputDialog(this, "Movie title for rating:");
         if (movieName != null) {
             Movie movie = list.get(movieName.trim());
@@ -245,7 +245,7 @@ public class MovieFrame extends JFrame {
         }
     }
 
-    private void deleteMovie() {
+    public void deleteMovie() {
         String movieNameDelete = JOptionPane.showInputDialog(this, "Movie title for deleting:");
         if (movieNameDelete != null) {
             Movie movie = list.get(movieNameDelete.trim());
@@ -264,7 +264,7 @@ public class MovieFrame extends JFrame {
         }
     }
 
-    private void addMovie() {
+    public void addMovie() {
         String name;
         while(true){
             name = JOptionPane.showInputDialog(this, "Enter movie name:");
@@ -315,7 +315,7 @@ public class MovieFrame extends JFrame {
     }
 
 
-    private void findGenre() {
+    public void findGenre() {
         String[] genres = {"Action", "Documentary", "Fantasy", "History", "Romance", "SF"};
         String genre = (String) JOptionPane.showInputDialog(this, "Choose genre to find:", "Find Genre", JOptionPane.QUESTION_MESSAGE, null, genres, genres[0]);
         if (genre != null) {
@@ -328,7 +328,7 @@ public class MovieFrame extends JFrame {
             updateTable(filteredList);
         }
     }
-    private void addToList(String[] movie) {
+    public void addToList(String[] movie) {
         if (list.containsKey(movie[0])) {
             return;
         }
@@ -381,7 +381,7 @@ public class MovieFrame extends JFrame {
         outputStream.close();
         JOptionPane.showMessageDialog(this, "Movies are saved in text file "+fileName, "Information", JOptionPane.PLAIN_MESSAGE);
     }
-    private void loadText() {
+    public void loadText() {
         String fileName = "movie.txt";
         Scanner inputStream = null;
 
