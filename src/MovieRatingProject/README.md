@@ -9,7 +9,7 @@ We are going to make a movie rating system.
 ## 3. UML diagram of classes and interfaces
 <img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/finalProject.jpg"><br>
 ## 4. github link
-
+https://github.com/SuinLee10/MovieRatingJava
 ## 5. User's guide: how to use your program
 <img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.jpeg"><br>
 <hr>
