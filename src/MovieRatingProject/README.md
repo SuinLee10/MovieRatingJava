@@ -20,4 +20,23 @@ Lastly, by inputting “delete,” the system asks and finds the movie that the 
 ## 4. github link
 
 ## 5. User's guide: how to use your program
-https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuide.pdf
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C2.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C4.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C5.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C6.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C7.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C8.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C9.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C10.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C11.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C12.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C13.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C14.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C15.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C16.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C17.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C18.jpeg"><br>
+<img src="https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuid/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C19.jpeg"><br>
+
