@@ -1,3 +1,5 @@
+package MovieRatingProject;
+
 import javax.swing.*;
 import java.util.Scanner;
 
@@ -43,6 +45,8 @@ public class Main {
 			}
 			else if (input.equalsIgnoreCase("add")) {
 				manager.addMovie();
+			}else if(input.equalsIgnoreCase("save")){
+				manager.save();
 			}
 			else System.out.println("::not a vaild function. try again::");
 		}

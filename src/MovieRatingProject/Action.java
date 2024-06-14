@@ -1,3 +1,5 @@
+package MovieRatingProject;
+
 public class Action extends Fiction{
 	public Action(String initialName, String initialYear, String initialGenre, String initialRate) {
         super(initialName, initialYear, initialGenre, initialRate);

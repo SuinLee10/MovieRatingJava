@@ -1,3 +1,5 @@
+package MovieRatingProject;
+
 public class Documentary extends NonFiction{
 	public Documentary(String initialName, String initialYear, String initialGenre, String initialRate) {
         super(initialName, initialYear, initialGenre, initialRate);

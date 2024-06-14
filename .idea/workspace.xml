@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7544e4bd-4a56-4f59-a16f-a70b03743d0a" name="Changes" comment="" />
+    <list default="true" id="7544e4bd-4a56-4f59-a16f-a70b03743d0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieRateJava.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sorting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/CRUD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Documentary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Fantasy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Fiction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/MovieFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/NonFiction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/Romance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/ScienceFiction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieRatingProject/iCRUD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trash.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
@@ -21,9 +66,25 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/leesu-in/Documents/JavaProgramming/finalproject/MovieRateJava",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/MovieRatingProject" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,8 +93,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718274375462</updated>
-      <workItem from="1718274376726" duration="1000" />
+      <workItem from="1718274376726" duration="15700000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MovieRatingProject/MovieFrame.java</url>
+          <line>393</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

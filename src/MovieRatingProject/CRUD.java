@@ -1,14 +1,12 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Scanner;
+package MovieRatingProject;
+
+import java.io.*;
+import java.util.*;
 
 public class CRUD implements iCRUD{
-    private ArrayList<Movie>list;
+    private Map<String, Movie> list;
     public CRUD(){
-        this.list = new ArrayList<Movie>();
+        this.list = new HashMap<>();
     }
     public void addMovie(){
         String title, year, rateFlag, genre, rate;
@@ -38,35 +36,38 @@ public class CRUD implements iCRUD{
     }
     public void addToList(String[] movie)
     {
+        if (list.containsKey(movie[0])) {
+            return;
+        }
         switch (movie[2].trim().toLowerCase()) {
             case "action":
-                if(movie.length == 4) list.add(new Action(movie[0], movie[1], movie[2], movie[3]));
-                else list.add(new Action(movie[0], movie[1], movie[2]));
+                if(movie.length == 4) list.put(movie[0], new Action(movie[0], movie[1], movie[2], movie[3]));
+                else list.put(movie[0], new Action(movie[0], movie[1], movie[2]));
                 break;
             case "documentary":
-                if(movie.length == 4) list.add(new Documentary(movie[0], movie[1], movie[2], movie[3]));
-                else list.add(new Documentary(movie[0], movie[1], movie[2]));
+                if(movie.length == 4) list.put(movie[0], new Documentary(movie[0], movie[1], movie[2], movie[3]));
+                else list.put(movie[0], new Documentary(movie[0], movie[1], movie[2]));
                 break;
             case "fantasy":
-                if(movie.length == 4) list.add(new Fantasy(movie[0], movie[1], movie[2], movie[3]));
-                else list.add(new Fantasy(movie[0], movie[1], movie[2]));
+                if(movie.length == 4) list.put(movie[0], new Fantasy(movie[0], movie[1], movie[2], movie[3]));
+                else list.put(movie[0], new Fantasy(movie[0], movie[1], movie[2]));
                 break;
             case "history":
-                if(movie.length == 4) list.add(new History(movie[0], movie[1], movie[2], movie[3]));
-                else list.add(new History(movie[0], movie[1], movie[2]));
+                if(movie.length == 4) list.put(movie[0], new History(movie[0], movie[1], movie[2], movie[3]));
+                else list.put(movie[0], new History(movie[0], movie[1], movie[2]));
                 break;
             case "romance":
-                if(movie.length == 4) list.add(new Romance(movie[0], movie[1], movie[2], movie[3]));
-                else list.add(new Romance(movie[0], movie[1], movie[2]));
+                if(movie.length == 4) list.put(movie[0], new Romance(movie[0], movie[1], movie[2], movie[3]));
+                else list.put(movie[0], new Romance(movie[0], movie[1], movie[2]));
                 break;
             case "sf":
-                if(movie.length == 4) list.add(new ScienceFiction(movie[0], movie[1], movie[2], movie[3]));
-                else list.add(new ScienceFiction(movie[0], movie[1], movie[2]));
+                if(movie.length == 4) list.put(movie[0], new ScienceFiction(movie[0], movie[1], movie[2], movie[3]));
+                else list.put(movie[0], new ScienceFiction(movie[0], movie[1], movie[2]));
                 break;
         }
     }
     public void loadText() {
-        String fileName = "MovieRatingProject/movie.txt";
+        String fileName = "movie.txt";
         Scanner inputStream = null;
 
         try {
@@ -88,7 +89,7 @@ public class CRUD implements iCRUD{
         if (list.isEmpty()) {
             System.out.println("The movie list is empty.");
         } else {
-            for(Movie movie : list){
+            for(Movie movie : list.values()){
                 System.out.println(movie.toString());
             }
         }
@@ -126,7 +127,7 @@ public class CRUD implements iCRUD{
         if (list.isEmpty()) {
             System.out.println("The movie list is empty.");
         } else {
-            for (Movie movie : list) {
+            for (Movie movie : list.values()) {
                 if (movie.getGenre().equalsIgnoreCase(genre)) {
                     System.out.println(movie.toString());
                 }
@@ -139,11 +140,9 @@ public class CRUD implements iCRUD{
         String movieName, movieRate;
         System.out.print("Movie title for rating: ");
         movieName = keyboard.nextLine().trim();
-        int flag = 0;
-        for(Movie movie: list) {
-            if (movie.getName().equalsIgnoreCase(movieName)) {
-                flag++;
-                System.out.println(movie.toString());
+        Movie movie = list.get(movieName);
+        if(movie != null){
+            System.out.println(movie.toString());
                 while(true) {
                     System.out.print("Enter the rate(1 ~ 5): ");
                     movieRate = keyboard.nextLine().trim();
@@ -156,50 +155,111 @@ public class CRUD implements iCRUD{
                         break;
                     }
                 }
-            }
+        }else{
+            System.out.println("Not Found");
         }
-        if(flag == 0) System.out.println("Not Found");
     }
     public void delete(){
         Scanner keyboard = new Scanner(System.in);
         String movieNameDelete, userConfirmation;
-        boolean deleteConfirmed = false;
         System.out.print("Movie title for deleting: ");
         movieNameDelete = keyboard.nextLine().trim();
-        for(Movie movie: list) {
-            if (movie.getName().equalsIgnoreCase(movieNameDelete)) {
-                System.out.println(movie.toString());
-                while(true) {
-                    System.out.print("Are you sure deleting <"+movie.getName()+ ">? (Y/N) : ");
-                    userConfirmation = keyboard.nextLine();
-                    if(userConfirmation.equalsIgnoreCase("y")) {
-                        deleteConfirmed = true;
-                        break;
-                    }
-                    else if(userConfirmation.equalsIgnoreCase("n")) {
-                        System.out.println("~ Deletion cancelled ~");
-                        break;
-                    }
+        Movie movie = list.get(movieNameDelete);
+        if(movie != null) {
+            System.out.println(movie.toString());
+            while (true) {
+                System.out.print("Are you sure deleting <" + movie.getName() + ">? (Y/N) : ");
+                userConfirmation = keyboard.nextLine();
+                if (userConfirmation.equalsIgnoreCase("y")) {
+                    list.remove(movieNameDelete);
+                    //System.out.println("::Successfully Deleted::");
+                    break;
+                } else if (userConfirmation.equalsIgnoreCase("n")) {
+                    System.out.println("~ Deletion cancelled ~");
+                    break;
+                } else {
                     System.out.println("::Invaild input. Try again.::");
                 }
             }
-        }
-        if(deleteConfirmed) {
-            list.removeIf((movie)->movie.getName().equalsIgnoreCase(movieNameDelete));
-            System.out.println("::Successfully Deleted::");
+        }else{
+            System.out.println("Not Found");
         }
     }
-    public void sortName(){
-        Collections.sort(list);
+    public void sortName() {
+        List<Map.Entry<String, Movie>> entryList = new ArrayList<>(list.entrySet());
+        entryList.sort(Map.Entry.comparingByKey());
         System.out.println("Name Sorted Successfully!");
+
+        // print sorted movies
+        for (Map.Entry<String, Movie> entry : entryList) {
+            System.out.println(entry.getValue().toString());
+        }
     }
 
     public void sortRate() {
-        Collections.sort(list, new Comparator<Movie>(){
-            public int compare(Movie movie, Movie otherMovie){
-                return movie.getRate().compareTo(otherMovie.getRate());
+        List<Map.Entry<String, Movie>> entryList = new ArrayList<>(list.entrySet());
+        entryList.sort((entry1, entry2) -> {
+            String rate1 = entry1.getValue().getRate();
+            String rate2 = entry2.getValue().getRate();
+
+            if (rate1.equals("Not Rated Yet") && rate2.equals("Not Rated Yet")) {
+                return entry1.getKey().compareTo(entry2.getKey());
+            } else if (rate1.equals("Not Rated Yet")) {
+                return 1;
+            } else if (rate2.equals("Not Rated Yet")) {
+                return -1;
+            } else {
+                int rateComparison = Integer.compare(Integer.parseInt(rate2), Integer.parseInt(rate1));
+                if (rateComparison == 0) {
+                    return entry1.getKey().compareTo(entry2.getKey());
+                }
+                return rateComparison;
             }
         });
-        System.out.println("Rate Sorted Successfully!");
+
+        // 정렬된 영화 출력
+        System.out.println("Movies sorted by rate (highest to lowest):");
+        for (Map.Entry<String, Movie> entry : entryList) {
+            Movie movie = entry.getValue();
+            StringBuilder stars = new StringBuilder();
+            if (!movie.getRate().equals("Not Rated Yet")) {
+                int rate = Integer.parseInt(movie.getRate());
+                for (int i = 0; i < rate; i++) {
+                    stars.append('*');
+                }
+            } else {
+                stars.append("Not Rated Yet");
+            }
+            System.out.printf("%-12s <%s> Year: %s Rate: %s\n",
+                    movie.getGenre(),
+                    movie.getName(),
+                    movie.getYear(),
+                    stars.toString()
+            );
+        }
     }
+    public void save(){
+        String fileName = "movie.txt";
+        PrintWriter outputStream = null;
+        try{
+            outputStream = new PrintWriter(fileName);
+        } catch (FileNotFoundException e) {
+            System.out.println("Error opening the file " + fileName);
+            throw new RuntimeException(e);
+        }
+        String movieInfo;
+        for(Movie movie : list.values()){
+            if(movie.getRate().equalsIgnoreCase("Not rated yet")){
+                movieInfo = movie.getName() + ", " + movie.getYear() + ", " + movie.getGenre() + "\n";
+                outputStream.println(movieInfo);
+            }else{
+                movieInfo = movie.getName() + ", " + movie.getYear() + ", " + movie.getGenre() + ", " + movie.getRate() + "\n";
+                outputStream.println(movieInfo);
+            }
+        }
+        outputStream.close();
+        System.out.println("Movies are saved in text file " + fileName);
+    }
+
+
 }

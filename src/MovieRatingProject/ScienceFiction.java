@@ -1,3 +1,5 @@
+package MovieRatingProject;
+
 public class ScienceFiction extends Fiction{
 	 public ScienceFiction(String initialName, String initialYear, String initialGenre, String initialRate) {
 	        super(initialName, initialYear, initialGenre, initialRate);

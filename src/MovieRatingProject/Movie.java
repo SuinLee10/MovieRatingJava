@@ -1,3 +1,5 @@
+package MovieRatingProject;
+
 import java.io.Serializable;
 
 public class Movie implements Comparable<Object>, Serializable {

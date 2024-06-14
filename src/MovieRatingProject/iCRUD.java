@@ -1,3 +1,5 @@
+package MovieRatingProject;
+
 public interface iCRUD {
     public void addMovie();
     public void addToList(String[] movie);
@@ -9,4 +11,5 @@ public interface iCRUD {
     public void delete();
     public void sortName();
     public void sortRate();
+    public void save();
 }
