@@ -20,3 +20,4 @@ Lastly, by inputting “delete,” the system asks and finds the movie that the 
 ## 4. github link
 
 ## 5. User's guide: how to use your program
+https://github.com/SuinLee10/MovieRatingJava/blob/master/UserGuide.pdf
